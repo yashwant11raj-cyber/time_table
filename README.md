@@ -228,8 +228,9 @@ timetable.html
 
 # OUTPUT
 
-![alt text](<Experiment-4/Screenshot 2026-10-21 103340.png>)
 ![alt text](<Experiment-4/Screenshot 2026-10-21 103326.png>)
+![alt text](<Experiment-4/Screenshot 2026-10-21 103340.png>)
+
 
 # RESULT
 
