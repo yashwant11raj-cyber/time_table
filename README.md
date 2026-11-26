@@ -14,7 +14,7 @@ Create a Django-admin Interface.
 
 ## STEP 2
 
-Create a static folder and inert HTML code.
+Create a static folder and insert HTML code.
 
 ## STEP 3
 
@@ -42,8 +42,17 @@ timetable.html
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><b>Student Timetable</b></title>
+    <title>Student Timetable</title>
     <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+      h1 {
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
       table,
       th,
       td,
@@ -61,7 +70,7 @@ timetable.html
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
-        width: 850px;
+        width: 90%;
       }
       span {
         writing-mode: vertical-rl;
@@ -95,9 +104,20 @@ timetable.html
         text-align: center;
         padding-left: 0;
       }
+      .subject-details {
+        margin-bottom: 40px;
+      }
+      .free {
+        background-color: #c8f7c5;
+        font-weight: bold;
+      }
+      .timetable-main tr:hover td:not(:first-child) {
+        background-color: #80f0ff;
+      }
     </style>
   </head>
   <body>
+    <h1>Student Timetable - Semester 1</h1>
     <table class="timetable-main">
       <caption>
         <b>Weekly Timetable</b>
@@ -126,7 +146,7 @@ timetable.html
         <td rowspan="6">
           <b><span>Mentor Meeting</span></b>
         </td>
-        <td><b>Free hour</b></td>
+        <td class="free">Free hour</td>
         <td rowspan="6">
           <b><span>Break</span></b>
         </td>
@@ -135,30 +155,30 @@ timetable.html
       <tr>
         <td><u>Tuesday</u></td>
         <td>FWAD</td>
-        <td><b>Free hour</b></td>
+        <td class="free">Free hour</td>
         <td>CCC</td>
-        <td><b>Free hour</b></td>
+        <td class="free">Free hour</td>
       </tr>
       <tr>
         <td><u>Wednesday</u></td>
         <td>CCC</td>
-        <td><b>Free hour</b></td>
-        <td><b>Free hour</b></td>
-        <td><b>Free hour</b></td>
+        <td class="free">Free hour</td>
+        <td class="free">Free hour</td>
+        <td class="free">Free hour</td>
       </tr>
       <tr>
         <td><u>Thursday</u></td>
         <td>Pyt</td>
         <td>Comp Arch</td>
         <td>Jap Lang</td>
-        <td><b>Free hour</b></td>
+        <td class="free">Free hour</td>
       </tr>
       <tr>
         <td><u>Friday</u></td>
         <td>Pyt</td>
-        <td><b>Free hour</b></td>
+        <td class="free">Free hour</td>
         <td>Jap Lang</td>
-        <td><b>Free hour</b></td>
+        <td class="free">Free hour</td>
       </tr>
       <tr>
         <td><u>Saturday</u></td>
@@ -224,12 +244,15 @@ timetable.html
   </body>
 </html>
 
+
 ```
 
 # OUTPUT
 
-![alt text](<Experiment-4/Screenshot 2026-10-21 103340.png>)
-![alt text](<Experiment-4/Screenshot 2026-10-21 103326.png>)
+Weekly Timetable Output:
+![Weekly Timetable details](<Experiment-4/Screenshot 2026-11-26 101953.png>)
+Subject details Output:
+![Subject details](<Experiment-4/Screenshot 2026-11-26 102003.png>)
 
 # RESULT
 
