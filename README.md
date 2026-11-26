@@ -90,6 +90,7 @@ timetable.html
       }
       .subject-details {
         background-color: #ffffff;
+        margin-bottom: 40px;
       }
       .subject-details th {
         background-color: #ffffff;
@@ -104,15 +105,9 @@ timetable.html
         text-align: center;
         padding-left: 0;
       }
-      .subject-details {
-        margin-bottom: 40px;
-      }
       .free {
         background-color: #c8f7c5;
         font-weight: bold;
-      }
-      .timetable-main tr:hover td:not(:first-child) {
-        background-color: #80f0ff;
       }
     </style>
   </head>
